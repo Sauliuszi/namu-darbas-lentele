@@ -1,0 +1,128 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+table,
+tr,
+th,
+td {
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto;
+  padding: 12px;
+}
+
+table {
+  width: 100%;
+}
+
+thead {
+  background-color: #93c438;
+  color: cornsilk;
+  font-size: x-large;
+}
+
+.forma {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+input,
+label {
+  margin: 5px 10px;
+}
+
+button {
+  margin: 22px;
+  padding: 2px 20px;
+  background-color: #b40009;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.spalva {
+  background-color: darkkhaki;
+}
+
+.trinti,
+.redaguoti {
+  border-style: none;
+  background-color: darksalmon;
+  color: darkred;
+  padding: 5px 30px;
+  margin: 2px;
+  border-radius: 10px;
+  font-size: larger;
+  border: solid 2px darkred;
+}
+
+.redaguoti {
+  background-color: #7ae980;
+  color: #008b07;
+  border: solid 2px #008b07;
+}
+
+.modaloFonas {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  display: none;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.modaloFonas.modalasVeikia {
+  z-index: 1;
+  display: block;
+}
+
+.modaloFonas .modalo_kortele {
+  border-radius: 10px;
+  width: 300px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 5px;
+  margin: 150px auto;
+}
+
+.modaloFonas .modalo_kortele .ne {
+  background-color: green;
+}
+
+.duomenu_modalas {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  display: none;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.duomenu_modalas.modalasVeikia {
+  z-index: 1;
+  display: block;
+}
+
+.duomenu_modalas #duomenu_forma {
+  border-radius: 10px;
+  width: 400px;
+  background-color: #ffffff;
+  padding: 5px;
+  margin: 150px auto;
+  text-align: end;
+}
+
+.duomenu_modalas #duomenu_forma #prideti {
+  background-color: green;
+}
+/*# sourceMappingURL=main.css.map */

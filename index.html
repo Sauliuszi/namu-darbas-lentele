@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>JS funkcijos</title>
+</head>
+
+<body>
+    <form onsubmit="duomenys(event)" action="" id="forma">
+        <div class="forma">
+            <div>
+                <label for="">Data</label><br>
+                <input type="date" id="data" name="data" placeholder="Data"><br>
+            </div>
+            <div>
+                <label for="">Valstybinis Nr</label><br>
+                <input type="text" id="nr" name="nr" placeholder="Valstybinis Nr"><br>
+            </div>
+            <div>
+                <label for="">Nuvaziuotas atstumas</label><br>
+                <input type="number" id="atstumas" name="atstumas" placeholder="Nuvaziuotas atstumas"><br>
+            </div>
+            <div>
+                <label for="">Laikas</label><br>
+                <input type="time" id="laikas" name="laikas" placeholder="Laikas"><br><br>
+            </div>
+            <div>
+                <button>Saugoti duomenis</button><br><br>
+            </div>
+        </div>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Data Laikas</th>
+                <th>Valstybinis Nr</th>
+                <th>Nuvaziuotas atstumas</th>
+                <th>Laikas</th>
+                <th>Trinti Redaguoti</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <!-- Modalo sukurimas -->
+    <div class="modaloFonas">
+        <div class="modalo_kortele">
+            <h3>Ar tikrai norite ištrinti?</h3>
+            <button class="ne">Ne</button>
+            <button class="taip">Taip</button>
+        </div>
+    </div>
+    <div class="duomenu_modalas">
+        <form id="duomenu_forma" action="">
+            <div>
+                <label for="">Data</label>
+                <input id="editData" type="date" placeholder="Data">
+            </div>
+            <div>
+                <label for="">Valstybinis Nr</label>
+                <input id="editdNr" type="text" placeholder="Numeris">
+            </div>
+            <div>
+                <label for="">Nuvaziuotas atstumas</label>
+                <input id="editAtstumas" type="number" placeholder="Nuvaziuotas atstumas">
+            </div>
+            <div>
+                <label for="">Laikas</label>
+                <input id="editKelias" type="time" placeholder="Laikas">
+            </div>
+            <button id="prideti">Pridėti</button>
+            <button id="atmesti">Atmesti</button>
+        </form>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
